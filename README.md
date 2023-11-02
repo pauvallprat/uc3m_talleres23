@@ -2,4 +2,6 @@
 Repositorio con los materiales de la asignatura Talleres de Análisis Político I
 
 Aquí vamos a añadir una lista con los nombres de los participantes en la asignatura:
-1. 
+
+1. Pau Vall-Prat
+2. 
