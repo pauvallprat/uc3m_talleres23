@@ -76,7 +76,7 @@ qog_csv <- read_csv("https://www.qogdata.pol.gu.se/data/qog_std_cs_jan23.csv")
 
 # Excel
 library(readxl)
-qog_xlsx <- read_xlsx("https://www.qogdata.pol.gu.se/data/qog_std_cs_jan23.xlsx")
+qog_xlsx <- read_xlsx("https://www.qogdata.pol.gu.se/data/qog_std_cs_jan23.xlsx") # da problemas, fichero corrompido
 
 
 # Importar de formatos de otros programas
@@ -84,28 +84,3 @@ library(haven)
 qog_sav <- read_sav("https://www.qogdata.pol.gu.se/data/qog_std_cs_jan23.sav")
 qog_dta <- read_dta("https://www.qogdata.pol.gu.se/data/qog_std_cs_jan23_stata14.dta")
 
-
-
-
-
-# Dplyr -------------------------------------------------------------------
-
-library(tidyverse)
-
-df <- data.frame(Nombre=c("J","M","T"),
-                 Edad=c(17,19,20),
-                 Partido =c("PP","PP","PSOE"))
-
-df$Edad
-
-df |> filter(Edad==19)
-
-df |> arrange(-Edad)
-
-df
-df <- df |> group_by(Partido)
-df
-
-# Unir bases de datos
-
-df1 <- read_csv("datos/parlamentos/designacion.csv")
